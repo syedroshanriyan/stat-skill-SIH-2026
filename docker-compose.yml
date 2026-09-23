@@ -1,0 +1,57 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: pgvector/pgvector:pg16
+    container_name: stat-skill-ai-db
+    environment:
+      POSTGRES_USER: statskill
+      POSTGRES_PASSWORD: statskillpass
+      POSTGRES_DB: statskilldb
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U statskill -d statskilldb"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  api:
+    build:
+      context: ./apps/api
+      dockerfile: Dockerfile
+    container_name: stat-skill-ai-api
+    depends_on:
+      postgres:
+        condition: service_healthy
+    ports:
+      - "8000:8000"
+    environment:
+      DATABASE_URL: postgresql://statskill:statskillpass@postgres:5432/statskilldb
+      JWT_SECRET: stat-skill-ai-super-secret-key-change-in-production-min-32-chars
+      CORS_ORIGINS: http://localhost:3000,http://127.0.0.1:3000
+      GEMINI_API_KEY: ${GEMINI_API_KEY:-}
+      STORAGE_BACKEND: local
+      STORAGE_DIR: /app/uploads
+    volumes:
+      - ./apps/api/uploads:/app/uploads
+    restart: unless-stopped
+
+  web:
+    build:
+      context: ./apps/web
+      dockerfile: Dockerfile
+    container_name: stat-skill-ai-web
+    depends_on:
+      - api
+    ports:
+      - "3000:3000"
+    environment:
+      NEXT_PUBLIC_API_URL: http://localhost:8000/api/v1
+      NEXT_PUBLIC_APP_URL: http://localhost:3000
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
