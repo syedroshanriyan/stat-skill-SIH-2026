@@ -1,4 +1,4 @@
-::: {align="center"}
+:::{align="center"}
 # STAT-SKILL AI
 
 ### AI-Powered Competency Intelligence Platform
@@ -10,7 +10,7 @@ and Academia**, built to turn profile data and measurable assessments
 into explainable skill-gap insights, grounded learning pathways,
 document-based quizzes, and continuous competency development.
 
-`<br/>`{=html}
+`<br/>`
 
 [![Live
 Demo](https://img.shields.io/badge/Live%20Demo-STAT--SKILL%20AI-143326?style=for-the-badge&logo=vercel&logoColor=white)](https://stat-skill-ai-psi.vercel.app)
@@ -21,7 +21,7 @@ Demo](https://img.shields.io/badge/Live%20Demo-STAT--SKILL%20AI-143326?style=for
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Ready-336791?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
 
-`<br/>`{=html}
+`<br/>`
 
 **[Launch the Live Platform →](https://stat-skill-ai-psi.vercel.app)**
 :::
@@ -1176,17 +1176,17 @@ ownership information.
 
 ------------------------------------------------------------------------
 
-::: {align="center"}
+:::{align="center"}
 ## STAT-SKILL AI
 
 **Measure competency. Identify the gap. Build the pathway. Verify the
 growth.**
 
-`<br/>`{=html}
+`<br/>`
 
 **[🚀 Launch STAT-SKILL AI](https://stat-skill-ai-psi.vercel.app)**
 
-`<br/>`{=html}
+`<br/>`
 
 Built for a measurable, evidence-oriented approach to **statistical
 capacity building and workforce intelligence**.
