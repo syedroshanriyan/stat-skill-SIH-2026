@@ -1,112 +1,72 @@
-STAT-SKILL AI
+::: {align="center"}
+# STAT-SKILL AI
 
-<p align="center">
-<img src="https://img.shields.io/badge/Smart%20India%20Hackathon-2026-0F766E?style=for-the-badge" alt="SIH 2026">
-<img src="https://img.shields.io/badge/AI-Competency%20Intelligence-7C3AED?style=for-the-badge" alt="AI Competency Intelligence">
-<img src="https://img.shields.io/badge/Next.js-14-111827?style=for-the-badge&logo=next.js&logoColor=white" alt="Next.js 14">
-<img src="https://img.shields.io/badge/FastAPI-Python-009688?style=for-the-badge&logo=fastapi&logoColor=white" alt="FastAPI">
-<img src="https://img.shields.io/badge/TypeScript-5.x-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript">
-</p>
-<p align="center">
-<strong>National Statistical Competency Intelligence Platform</strong>
-</p>
-<p align="center">
-A unified AI-powered platform for competency assessment, skill-gap
-intelligence, personalized learning, document-grounded quizzes, and
-workforce capability development.
-</p>
-<p align="center">
-<a href="https://stat-skill-ai-psi.vercel.app"><strong>🚀 Live
-Demo</strong></a>  • 
-<a href="https://github.com/syedroshanriyan/stat-skill-SIH-2026"><strong>💻
-Repository</strong></a>
-</p>
+### AI-Powered Competency Intelligence Platform
 
-✨ What is STAT-SKILL AI?
+**Assess → Diagnose → Learn → Reassess**
 
-STAT-SKILL AI is a competency intelligence platform built around one
-core idea:
+A unified competency intelligence platform for **Government, Industry,
+and Academia**, built to turn profile data and measurable assessments
+into explainable skill-gap insights, grounded learning pathways,
+document-based quizzes, and continuous competency development.
 
-Don’t recommend learning first. Understand the competency gap
-first.
+`<br/>`{=html}
 
-The platform combines user profiling, diagnostic assessment, competency
-modeling, deterministic skill-gap analysis, grounded recommendations,
-document-to-quiz generation, learning paths, and progress tracking into
-one workflow.
+[![Live
+Demo](https://img.shields.io/badge/Live%20Demo-STAT--SKILL%20AI-143326?style=for-the-badge&logo=vercel&logoColor=white)](https://stat-skill-ai-psi.vercel.app)
+[![SIH
+2026](https://img.shields.io/badge/Smart%20India%20Hackathon-2026-0F766E?style=for-the-badge)](https://www.sih.gov.in/)
+[![Next.js](https://img.shields.io/badge/Next.js-14-111827?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-Python-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Ready-336791?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
 
-It is designed around three connected tracks:
+`<br/>`{=html}
 
-Track
+**[Launch the Live Platform →](https://stat-skill-ai-psi.vercel.app)**
+:::
 
-Purpose
+------------------------------------------------------------------------
 
-Example Focus
+## Table of Contents
 
-🏛️ Government
+-   [Overview](#-overview)
+-   [The Problem](#-the-problem)
+-   [The STAT-SKILL Approach](#-the-stat-skill-approach)
+-   [Core Intelligence Engine](#-core-intelligence-engine)
+-   [Three Specialized Tracks](#-three-specialized-tracks)
+-   [Key Capabilities](#-key-capabilities)
+-   [How It Works](#-how-it-works)
+-   [Document-to-Quiz Intelligence](#-document-to-quiz-intelligence)
+-   [Skill-Gap Intelligence](#-skill-gap-intelligence)
+-   [Platform Architecture](#-platform-architecture)
+-   [Technology Stack](#-technology-stack)
+-   [Repository Structure](#-repository-structure)
+-   [Application Routes](#-application-routes)
+-   [Getting Started](#-getting-started)
+-   [Environment Variables](#-environment-variables)
+-   [Docker](#-docker)
+-   [Testing & Build](#-testing--build)
+-   [Deployment](#-deployment)
+-   [Security & Data Handling](#-security--data-handling)
+-   [Design Principles](#-design-principles)
+-   [Project Status](#-project-status)
+-   [Contributing](#-contributing)
+-   [License](#-license)
 
-Statistical workforce capacity building
+------------------------------------------------------------------------
 
-Official Statistics, survey methodology, sampling, national accounts, indices
+## ✨ Overview
 
-🏢 Industry
+**STAT-SKILL AI** is a competency intelligence platform designed around
+a simple principle:
 
-Analytics and data workforce development
+> **Do not recommend learning before understanding the competency gap.**
 
-SQL, BI, analytics, econometrics, applied projects
+Instead of behaving like a conventional course catalogue, STAT-SKILL AI
+creates a closed-loop competency workflow:
 
-🎓 Academia
-
-Student and curriculum development
-
-Statistics curriculum, competency mapping, internship readiness
-
-The Government track is the primary SIH 2026 problem-context
-implementation, while Industry and Academia extend the same competency
-intelligence engine to adjacent ecosystems.
-
-🚀 Live Application
-
-Open STAT-SKILL AI →
-
-The deployed frontend is hosted on Vercel.
-
-The backend API is deployed separately and connected to the frontend
-through the application’s API/proxy configuration, so the public README
-does not need to expose the backend service URL.
-
-🎯 Problem
-
-Most learning platforms answer:
-
-“What courses are available?”
-
-STAT-SKILL AI asks:
-
-“What does this person need to learn next, and what evidence shows
-that?”
-
-The platform addresses
-
-Competency being inferred from qualifications instead of demonstrated
-ability.
-
-Learners not knowing their exact skill gaps.
-
-Generic recommendations that are not tied to measurable deficiencies.
-
-Difficulty connecting government employees with domain-specific
-capacity-building resources.
-
-Learning material being disconnected from assessment.
-
-AI recommendations becoming unreliable when they are not grounded in
-structured competency data.
-
-Institutions lacking a continuous view of competency development.
-
-The intended transformation
-
+``` text
 Profile
    ↓
 Diagnostic Assessment
@@ -115,234 +75,445 @@ Competency Profile
    ↓
 Skill-Gap Analysis
    ↓
-Grounded Recommendation
+Grounded Recommendations
    ↓
-Personalized Learning
+Personalized Learning Path
+   ↓
+Practice / Evidence
    ↓
 Reassessment
    ↓
 Updated Competency State
+```
 
-🧠 Core Intelligence Model
+The platform uses one shared intelligence architecture while supporting
+three distinct ecosystems:
 
-STAT-SKILL AI is built around a shared AI Competency Intelligence
-Engine.
+  -----------------------------------------------------------------------
+  Track                   Primary Purpose         Example Competencies
+  ----------------------- ----------------------- -----------------------
+  🏛️ **Government**       Statistical workforce   Survey methodology,
+                          capacity building       sampling, national
+                                                  accounts, price
+                                                  indices, official
+                                                  statistics
 
+  🏢 **Industry**         Analytics &             SQL, BI, data
+                          professional            analytics,
+                          development             econometrics,
+                                                  statistical modelling
+
+  🎓 **Academia**         Curriculum &            Course outcomes,
+                          employability alignment competency mapping,
+                                                  internship readiness
+  -----------------------------------------------------------------------
+
+The **Government track is the primary SIH-oriented implementation**,
+while Industry and Academia extend the same competency engine to
+adjacent use cases.
+
+------------------------------------------------------------------------
+
+## 🎯 The Problem
+
+Traditional learning systems usually start with:
+
+> **"Here are the courses available."**
+
+STAT-SKILL AI starts with:
+
+> **"What competency does this person currently demonstrate, what level
+> is required, and what is the measurable gap?"**
+
+### Problems addressed
+
+-   Competency is often inferred from qualifications rather than
+    demonstrated ability.
+-   Learners may not know which specific skills are below the required
+    level.
+-   Generic course recommendations are not necessarily tied to
+    measurable deficiencies.
+-   Government statistical capacity building requires domain-specific
+    competency pathways.
+-   Learning material and assessment frequently exist as disconnected
+    workflows.
+-   Free-form AI recommendations can become unreliable when they are not
+    grounded in structured competency data.
+-   Institutions need a continuous view of competency development rather
+    than isolated test scores.
+
+------------------------------------------------------------------------
+
+## 🧠 The STAT-SKILL Approach
+
+The platform separates **measurement**, **diagnosis**, and
+**recommendation**.
+
+``` mermaid
 flowchart LR
-    A[User Profile] --> B[Diagnostic Assessment]
-    B --> C[Competency Intelligence]
-    C --> D[Skill-Gap Engine]
-    D --> E[Recommendation Engine]
-    E --> F[Personalized Learning]
-    F --> G[Reassessment]
-    G --> C
+    A["User Profile"] --> B["Diagnostic Assessment"]
+    B --> C["Competency State"]
+    C --> D["Skill-Gap Engine"]
+    D --> E["Recommendation Engine"]
+    E --> F["Learning Path"]
+    F --> G["Practice / Evidence"]
+    G --> H["Reassessment"]
+    H --> C
 
-    H[Learning Documents] --> I[Document Intelligence]
-    I --> J[RAG / Embeddings]
-    J --> K[Grounded Quiz Generation]
-    K --> B
+    I["Learning Documents"] --> J["Document Intelligence"]
+    J --> K["Retrieval / Embeddings"]
+    K --> L["Grounded Quiz Generation"]
+    L --> B
+```
 
-The important architectural decision is that assessment, competency
-state, gap analysis, and recommendations are separate concerns.
+### Why this architecture matters
 
-This makes the system easier to explain, test, extend, and adapt to new
-sectors.
+-   **Assessment is deterministic** rather than delegated entirely to an
+    LLM.
+-   **Skill gaps are explicitly calculated** against defined targets.
+-   **Recommendations have a reason**: competency, role, track,
+    priority, and resource relevance.
+-   **AI is grounded** where the workflow requires source-based
+    generation.
+-   **Competency state persists** so improvement can be measured over
+    time.
+-   The same engine can support different competency frameworks without
+    rebuilding the entire platform.
 
-🏛️ Government Track
+------------------------------------------------------------------------
+
+## 🧩 Core Intelligence Engine
+
+At the centre of STAT-SKILL AI is a shared **AI Competency Intelligence
+Engine**.
+
+``` mermaid
+flowchart TD
+    P["Profile + Role"] --> A["Diagnostic Assessment"]
+    A --> C["Competency Intelligence"]
+    C --> G["Gap Analysis"]
+    G --> R["Recommendation Engine"]
+    R --> L["Personalized Learning"]
+    L --> E["Evidence / Practice"]
+    E --> RA["Reassessment"]
+    RA --> C
+
+    D["PDF / DOCX / PPTX"] --> DI["Document Intelligence"]
+    DI --> CH["Chunking"]
+    CH --> EMB["Embeddings / Retrieval"]
+    EMB --> Q["Grounded Quiz Generation"]
+    Q --> A
+```
+
+### Core separation of concerns
+
+  -----------------------------------------------------------------------
+  Layer                               Responsibility
+  ----------------------------------- -----------------------------------
+  **Assessment Engine**               Establishes measurable competency
+                                      baselines
+
+  **Competency Engine**               Maintains proficiency state and
+                                      history
+
+  **Gap Engine**                      Calculates shortfalls against
+                                      required levels
+
+  **Recommendation Engine**           Maps gaps to relevant learning
+                                      resources
+
+  **Learning Path Engine**            Converts gaps into sequenced
+                                      development plans
+
+  **Document Intelligence**           Extracts knowledge from uploaded
+                                      material
+
+  **RAG / Retrieval Layer**           Retrieves relevant source context
+
+  **Quiz Engine**                     Produces structured,
+                                      source-grounded assessments
+
+  **Analytics**                       Aggregates competency and learning
+                                      progress
+
+  **Evidence Layer**                  Stores competency-related evidence
+                                      and submissions
+  -----------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+# 🏛️ Three Specialized Tracks
+
+## 1. Government --- Official Statistics
 
 The Government track is the primary SIH-oriented workflow.
 
-It focuses on competency development within the Official Statistical
-System, including areas such as:
-
-Survey methodology
-
-Sampling methodology
-
-Statistical analysis
-
-National accounts
-
-Price indices
-
-Official statistical data production
-
-Statistical workflows
-
-Role-specific statistical competencies
-
-The platform’s catalogue/provider architecture also supports
-government-oriented learning sources such as:
-
-iGOT Karmayogi
-
-NSSTA
-
-Other configured government training resources
-
-Government workflow
-
-flowchart TD
-    A[Government Officer] --> B[Profile + Role]
-    B --> C[Diagnostic Assessment]
-    C --> D[Competency Profile]
-    D --> E[Skill-Gap Analysis]
-    E --> F[iGOT / NSSTA / Relevant Resources]
-    F --> G[Personalized Learning Path]
-    G --> H[Practice + Assessment]
-    H --> I[Reassessment]
-    I --> D
-
-🏢 Industry Track
-
-The same competency engine can support analytics-oriented professional
-development.
-
-Example competency areas include:
-
-SQL
-
-Data analytics
-
-Business intelligence
-
-Econometrics
-
-Statistical modeling
-
-Data interpretation
-
-Applied analytical projects
-
-The architecture allows industry roles and competency frameworks to be
-added without rebuilding the core assessment and recommendation
-infrastructure.
-
-🎓 Academia Track
-
-The Academia track extends the platform toward education and
-employability.
-
-Potential use cases include:
-
-Statistics curriculum mapping
-
-Course Outcome alignment
-
-Student competency assessment
-
-Skill-gap identification
-
-Internship readiness
-
-Personalized learning recommendations
-
-Progress monitoring
-
-This creates a bridge from academic learning → demonstrated competency
-→ industry/government readiness.
-
-📊 Key Capabilities
-
-Capability
-
-What it does
-
-🧪 Diagnostic Assessment
-
-Establishes a measurable competency baseline
-
-🧠 Competency Intelligence
-
-Maintains competency state, level, evidence, and history
-
-📉 Skill-Gap Analysis
-
-Compares current competency against required proficiency
-
-🎯 Recommendations
-
-Maps identified gaps to relevant learning resources
-
-🗺️ Learning Paths
-
-Converts gaps into structured learning journeys
-
-📄 Document Intelligence
-
-Extracts knowledge from uploaded learning material
-
-🤖 AI Quiz Generation
-
-Generates MCQs grounded in source material
-
-🔎 RAG / Embeddings
-
-Supports semantic retrieval over indexed content
-
-📈 Progress Analytics
-
-Tracks competency development over time
-
-🗂️ Evidence
-
-Supports evidence-oriented competency development
-
-🏛️ Multi-Track Architecture
-
-Government, Industry, and Academia on one engine
-
-📄 Document → Knowledge → Quiz
-
-One of the platform’s important workflows is turning learning material
-into assessment content.
-
-Supported document processing includes:
-
-PDF
-
-DOCX
-
-PPTX
-
+It is designed around statistical workforce capacity building and
+includes competency areas such as:
+
+-   Survey methodology
+-   Sampling methodology
+-   Statistical analysis
+-   National accounts
+-   CPI / WPI and price indices
+-   Official statistical data production
+-   Statistical workflows
+-   Role-specific statistical competencies
+
+### Government workflow
+
+``` mermaid
 flowchart LR
-    A[Upload Document] --> B[Text Extraction]
-    B --> C[Chunking]
-    C --> D[Embeddings / Knowledge Layer]
-    D --> E[Relevant Context]
-    E --> F[AI Quiz Generation]
-    F --> G[Grounded MCQs]
-    G --> H[Assessment]
+    A["Officer Profile"] --> B["Role & Cadre Mapping"]
+    B --> C["Diagnostic Assessment"]
+    C --> D["Competency Profile"]
+    D --> E["Skill-Gap Analysis"]
+    E --> F["iGOT / NSSTA Resources"]
+    F --> G["Personalized Learning Path"]
+    G --> H["Practice + Assessment"]
+    H --> I["Reassessment"]
+    I --> D
+```
 
-Generated questions can contain:
+The catalogue architecture supports government-oriented learning sources
+such as:
 
-Question
+-   **iGOT Karmayogi**
+-   **NSSTA**
+-   Other configured government training resources
 
-Multiple options
+------------------------------------------------------------------------
 
-Correct answer
+## 2. Industry --- Analytics & Professional Development
 
-Explanation
+The Industry track reuses the same competency intelligence engine for
+professional analytics roles.
 
-Difficulty
+Example competency areas:
 
-Competency mapping
+-   SQL
+-   Data analytics
+-   Business intelligence
+-   Econometrics
+-   Statistical modelling
+-   Data interpretation
+-   Applied analytical projects
+-   Role-oriented skill development
 
-Source/page reference where available
+``` text
+Target Role
+    ↓
+Role Requirements
+    ↓
+Current Competency
+    ↓
+Skill Gap
+    ↓
+Learning + Projects
+    ↓
+Evidence
+    ↓
+Reassessment
+```
+
+------------------------------------------------------------------------
+
+## 3. Academia --- Curriculum & Employability
+
+The Academia track connects academic learning with demonstrated
+competency.
+
+Potential workflows include:
+
+-   Curriculum mapping
+-   Course Outcome alignment
+-   Student competency assessment
+-   Skill-gap identification
+-   Internship readiness
+-   Personalized learning
+-   Evidence portfolio development
+
+``` text
+Coursework
+    ↓
+Course Outcomes
+    ↓
+Competency Mapping
+    ↓
+Student Assessment
+    ↓
+Skill Gaps
+    ↓
+Targeted Development
+    ↓
+Internship / Career Readiness
+```
+
+------------------------------------------------------------------------
+
+# 🚀 Key Capabilities
+
+  -----------------------------------------------------------------------
+  Capability                          What it does
+  ----------------------------------- -----------------------------------
+  🧪 **Diagnostic Assessment**        Establishes a measurable competency
+                                      baseline
+
+  🧠 **Competency Intelligence**      Maintains proficiency state,
+                                      history, and evidence
+
+  📉 **Skill-Gap Analysis**           Compares current proficiency with
+                                      required benchmarks
+
+  🎯 **Grounded Recommendations**     Maps gaps to relevant resources
+
+  🗺️ **Learning Paths**               Converts identified gaps into
+                                      structured development journeys
+
+  📄 **Document Intelligence**        Extracts content from PDF, DOCX,
+                                      and PPTX files
+
+  🤖 **AI Quiz Generation**           Generates structured MCQs from
+                                      relevant source material
+
+  🔎 **RAG / Embeddings**             Enables semantic retrieval over
+                                      indexed content
+
+  📈 **Progress Analytics**           Tracks competency development and
+                                      learning activity
+
+  🗂️ **Evidence Layer**               Supports evidence-oriented
+                                      competency development
+
+  🔐 **Track / Tenant Isolation**     Enforces server-side data access
+                                      boundaries
+
+  🏛️ **Government Catalogue           Supports iGOT Karmayogi /
+  Adapters**                          NSSTA-oriented resource mapping
+  -----------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+# ⚙️ How It Works
+
+STAT-SKILL AI follows a nine-stage competency lifecycle.
+
+``` mermaid
+flowchart TD
+    S1["01 · Onboarding & Role Mapping"]
+    S2["02 · Diagnostic Baseline"]
+    S3["03 · Competency Spectrum"]
+    S4["04 · Skill-Gap Identification"]
+    S5["05 · Learning Roadmap"]
+    S6["06 · Grounded Capacity Building"]
+    S7["07 · AI Grounded Quizzes"]
+    S8["08 · Competency History"]
+    S9["09 · Evidence & Oversight"]
+
+    S1 --> S2 --> S3 --> S4 --> S5 --> S6 --> S7 --> S8 --> S9
+    S8 --> S3
+```
+
+### Stage-by-stage
+
+**01 --- Onboarding & Role Mapping**
+
+The learner selects a sector and role. The platform establishes the
+competency framework and target requirements.
+
+**02 --- Diagnostic Baseline**
+
+A structured assessment establishes the learner's starting competency
+state.
+
+**03 --- Competency Spectrum**
+
+Scores are mapped into defined proficiency tiers and visualized through
+the competency dashboard.
+
+**04 --- Skill-Gap Identification**
+
+Current proficiency is compared with target requirements and shortfalls
+are prioritized.
+
+**05 --- Learning Roadmap**
+
+The recommendation layer converts priority gaps into an ordered learning
+pathway.
+
+**06 --- Grounded Capacity Building**
+
+Relevant resources are mapped from configured catalogues, including
+government-oriented iGOT / NSSTA pathways.
+
+**07 --- AI Grounded Quizzes**
+
+Uploaded manuals, circulars, textbooks, or learning material can be
+transformed into source-grounded assessment content.
+
+**08 --- Competency History**
+
+Assessment events update persisted competency state and maintain
+historical changes.
+
+**09 --- Evidence & Oversight**
+
+Learners can build competency evidence while institutional views can
+aggregate workforce-level insights within authorized scopes.
+
+------------------------------------------------------------------------
+
+# 📄 Document-to-Quiz Intelligence
+
+One of the platform's key workflows is converting learning material into
+assessment content.
+
+### Supported source formats
+
+-   PDF
+-   DOCX
+-   PPTX
+
+### Pipeline
+
+``` mermaid
+flowchart LR
+    A["Upload Document"] --> B["Text Extraction"]
+    B --> C["Chunking"]
+    C --> D["Embedding / Knowledge Layer"]
+    D --> E["Relevant Context"]
+    E --> F["AI Generation"]
+    F --> G["Validation / Normalization"]
+    G --> H["Grounded MCQs"]
+    H --> I["Assessment"]
+```
+
+Generated assessment content can contain:
+
+-   Question
+-   Multiple options
+-   Correct answer
+-   Explanation
+-   Difficulty
+-   Competency mapping
+-   Source / page reference where available
 
 The objective is to keep generated assessment content connected to the
-material from which it was produced.
+source material used to generate it.
 
-🤖 AI-Assisted Quiz Generation
+------------------------------------------------------------------------
 
-The backend supports Google Gemini-based generation when an API key is
-configured.
+# 🤖 AI + Grounded Generation
 
-The quiz pipeline can use:
+The backend supports Google Gemini-based generation when the required
+API configuration is available.
 
+Conceptually:
+
+``` text
 Source Material
       ↓
-Relevant Content
+Relevant Context
       ↓
 AI Generation
       ↓
@@ -351,162 +522,163 @@ Structured MCQ
 Validation / Normalization
       ↓
 Assessment
+```
 
-The system also contains deterministic fallback behavior for
-development/testing environments where the external AI service is
+The repository also includes deterministic fallback behavior for
+development and testing scenarios where an external AI service is
 unavailable.
 
-This prevents the complete application from becoming unusable simply
-because an AI provider is temporarily unavailable.
+This makes AI-assisted workflows less dependent on a single provider
+being available at every moment.
 
-🎯 Skill-Gap Intelligence
+------------------------------------------------------------------------
 
-STAT-SKILL AI separates measurement from recommendation.
+# 📉 Skill-Gap Intelligence
 
-Conceptually:
+STAT-SKILL AI deliberately separates **measurement** from
+**recommendation**.
 
+``` text
 Required Proficiency
         │
         ▼
-┌──────────────────┐
-│ Required Level   │
-└────────┬─────────┘
-         │
-         │ comparison
-         ▼
-┌──────────────────┐
-│ Current Ability  │
-└────────┬─────────┘
-         │
-         ▼
-┌──────────────────┐
-│ Skill Gap        │
-│ + Priority       │
-└──────────────────┘
+┌─────────────────────┐
+│ Required Level      │
+└──────────┬──────────┘
+           │
+           │ comparison
+           ▼
+┌─────────────────────┐
+│ Current Ability     │
+└──────────┬──────────┘
+           │
+           ▼
+┌─────────────────────┐
+│ Skill Gap           │
+│ + Priority          │
+└─────────────────────┘
+```
 
-A competency gap can be represented through values such as:
+A competency record can incorporate values such as:
 
-Current score
+-   Current score
+-   Required score / level
+-   Gap
+-   Priority
+-   Status
+-   Assessment attempt
+-   Confidence / history metadata
+-   Last update
 
-Required score
-
-Gap value
-
-Priority
-
-Status
-
-Last updated time
-
-This provides an explicit basis for recommendations rather than relying
+This provides a structured basis for recommendations instead of relying
 only on free-form AI output.
 
-🧩 Recommendation Engine
+------------------------------------------------------------------------
 
-The recommendation layer is designed as a hybrid system.
+# 🏗️ Platform Architecture
 
-Current Competency
-        +
-Required Competency
-        +
-Gap Priority
-        +
-Track
-        +
-Resource Relevance
-        +
-Provider / Catalogue
-        ↓
-Recommendation
-
-For example, a Government-track competency gap can be mapped toward
-configured government-oriented resources instead of returning arbitrary
-internet content.
-
-This makes recommendations more traceable and domain-aware.
-
-🔎 RAG & Embedding Architecture
-
-The backend contains an embedding and retrieval layer for
-document-grounded intelligence.
-
-flowchart TD
-    A[Document] --> B[Extraction]
-    B --> C[Chunks]
-    C --> D[Embedding]
-    D --> E[(Vector Store)]
-    F[User Query / Quiz Request] --> G[Query Embedding]
-    G --> E
-    E --> H[Relevant Context]
-    H --> I[AI Generation]
-    I --> J[Grounded Output]
-
-The architecture supports:
-
-Google model-based embeddings when configured.
-
-Deterministic fallback embeddings for offline/testing scenarios.
-
-PostgreSQL with pgvector for vector-search-oriented deployments.
-
-SQLite for lightweight local development.
-
-🔄 Continuous Competency Lifecycle
-
-Assessment is not intended to be an isolated event.
-
-stateDiagram-v2
-    [*] --> Profile
-    Profile --> Assessment
-    Assessment --> CompetencyState
-    CompetencyState --> GapAnalysis
-    GapAnalysis --> Recommendations
-    Recommendations --> Learning
-    Learning --> Reassessment
-    Reassessment --> CompetencyState
-
-The resulting feedback loop is:
-
-Assess → Diagnose → Learn → Reassess → Update
-
-This allows competency development to be treated as a continuous process
-instead of a one-time quiz score.
-
-🏗️ System Architecture
-
+``` mermaid
 flowchart TB
-    U[Browser / User] --> W[Next.js Web Application]
+    U["Browser / User"]
 
-    W --> P[Next.js API Proxy]
-    P --> A[FastAPI Backend]
+    U --> W["Next.js Web Application"]
+    W --> P["Next.js API Proxy"]
+    P --> A["FastAPI Backend"]
 
-    A --> AUTH[Authentication]
-    A --> COMP[Competency Engine]
-    A --> ASSESS[Assessment Engine]
-    A --> GAP[Skill-Gap Engine]
-    A --> REC[Recommendation Engine]
-    A --> DOC[Document Intelligence]
-    A --> QUIZ[Quiz Engine]
-    A --> RAG[RAG / Embedding Layer]
-    A --> ANALYTICS[Analytics]
-    A --> EVIDENCE[Evidence]
+    A --> AUTH["Authentication"]
+    A --> COMP["Competency Engine"]
+    A --> ASS["Assessment Engine"]
+    A --> GAP["Skill-Gap Engine"]
+    A --> REC["Recommendation Engine"]
+    A --> LP["Learning Paths"]
+    A --> DOC["Document Intelligence"]
+    A --> QUIZ["Quiz Engine"]
+    A --> RAG["RAG / Embeddings"]
+    A --> ANA["Analytics"]
+    A --> EVI["Evidence"]
 
-    A --> DB[(SQLite / PostgreSQL)]
-    RAG --> VDB[(PostgreSQL + pgvector)]
-    DOC --> AI[Google Gemini]
+    A --> DB[("SQLite / PostgreSQL")]
+    RAG --> VDB[("PostgreSQL + pgvector")]
+
+    DOC --> AI["Google Gemini"]
     QUIZ --> AI
+```
 
-🧱 Repository Architecture
+### Architectural characteristics
 
+-   **Frontend / backend separation**
+-   **Next.js reverse proxy for API access**
+-   **Domain-oriented FastAPI modules**
+-   **SQLAlchemy-based persistence**
+-   **SQLite for lightweight development**
+-   **PostgreSQL + pgvector for production-oriented retrieval**
+-   **Provider-aware AI generation**
+-   **Server-side authorization and data isolation**
+-   **Modular competency frameworks**
+-   **Reusable engine across Government, Industry, and Academia**
+
+------------------------------------------------------------------------
+
+# 🛠️ Technology Stack
+
+## Frontend
+
+  Technology           Purpose
+  -------------------- ----------------------------------
+  **Next.js 14**       Application framework
+  **React 18**         UI layer
+  **TypeScript 5.x**   Type-safe development
+  **Tailwind CSS**     Design system and styling
+  **Recharts**         Analytics and data visualization
+  **Lucide React**     Interface icons
+
+## Backend
+
+  Technology             Purpose
+  ---------------------- ------------------------
+  **Python 3.12**        Backend runtime
+  **FastAPI**            REST API
+  **Uvicorn**            ASGI server
+  **SQLAlchemy 2**       ORM / persistence
+  **Pydantic 2**         Validation and schemas
+  **JWT**                Authentication
+  **bcrypt / Passlib**   Password hashing
+  **pytest**             Backend testing
+
+## AI & Data
+
+  Technology          Purpose
+  ------------------- --------------------------------------------
+  **Google Gemini**   AI generation / embeddings when configured
+  **RAG**             Grounded document intelligence
+  **PostgreSQL**      Production-oriented relational database
+  **pgvector**        Vector similarity search
+  **SQLite**          Lightweight local database
+
+## Deployment
+
+  Platform             Role
+  -------------------- ----------------------------------------------
+  **Vercel**           Live frontend deployment
+  **Render**           Backend deployment
+  **Docker Compose**   Local multi-service environment
+  **Railway**          Alternative backend deployment configuration
+
+------------------------------------------------------------------------
+
+# 📁 Repository Structure
+
+``` text
 stat-skill-SIH-2026/
 │
 ├── apps/
 │   ├── web/                         # Next.js frontend
 │   │   ├── src/
-│   │   │   ├── app/
-│   │   │   └── components/
+│   │   │   ├── app/                 # Pages and application routes
+│   │   │   └── components/          # Shared UI components
 │   │   ├── Dockerfile
-│   │   └── package.json
+│   │   ├── package.json
+│   │   └── vercel.json
 │   │
 │   └── api/                         # FastAPI backend
 │       ├── app/
@@ -537,775 +709,485 @@ stat-skill-SIH-2026/
 │       └── requirements.txt
 │
 ├── packages/
-│   └── shared-types/                # Shared type definitions
+│   └── shared-types/                # Shared TypeScript types
 │
-├── scripts/                         # Startup / development scripts
-├── uploads/                         # Upload-related project resources
+├── scripts/                         # Startup, seed and test utilities
+├── infra/                           # Infrastructure placeholders/config
+├── uploads/                         # Upload storage directory
 ├── docker-compose.yml
 ├── render.yaml
 ├── railway.json
 ├── Procfile
 ├── package.json
 └── README.md
+```
 
-🛠️ Technology Stack
+------------------------------------------------------------------------
 
-Frontend
+# 🧭 Application Routes
 
-Technology
+The public web application currently exposes dedicated experiences for
+the major platform areas.
 
-Role
+  Route                   Purpose
+  ----------------------- ----------------------------------------
+  `/`                     Platform landing page
+  `/login`                Authentication
+  `/register`             Learner registration
+  `/government`           Government / Official Statistics track
+  `/industry`             Industry / analytics track
+  `/academia`             Academia / curriculum track
+  `/features`             Platform capabilities
+  `/how-it-works`         Competency lifecycle
+  `/legal-intelligence`   Statutory / legal intelligence area
+  `/faq`                  Frequently asked questions
 
-Next.js 14
+The authenticated application contains dashboard areas for competency,
+assessments, gaps, recommendations, learning paths, documents, quizzes,
+evidence, analytics, and related workflows.
 
-Application framework
+------------------------------------------------------------------------
 
-React 18
+# ⚡ Getting Started
 
-UI layer
-
-TypeScript
-
-Type-safe development
-
-Tailwind CSS
-
-Styling
-
-Recharts
-
-Analytics and visualizations
-
-Lucide React
-
-UI icons
-
-Backend
-
-Technology
-
-Role
-
-Python 3.12
-
-Backend runtime
-
-FastAPI
-
-REST API
-
-Uvicorn
-
-ASGI server
-
-SQLAlchemy 2
-
-ORM
-
-Pydantic 2
-
-Validation and schemas
-
-JWT
-
-Authentication
-
-bcrypt / Passlib
-
-Password hashing
-
-pytest
-
-Testing
-
-AI & Data
-
-Technology
-
-Role
-
-Google Gemini
-
-AI generation / embeddings
-
-RAG
-
-Grounded document intelligence
-
-PostgreSQL
-
-Production-oriented relational database
-
-pgvector
-
-Vector similarity search
-
-SQLite
-
-Lightweight local/deployment option
-
-Deployment
-
-Platform
-
-Role
-
-Vercel
-
-Live frontend deployment
-
-Render
-
-Backend deployment
-
-Docker Compose
-
-Local multi-service environment
-
-Railway
-
-Alternative backend deployment
-
-📁 Backend Domain Modules
-
-The FastAPI backend is organized by domain rather than putting all
-business logic into a single application file.
-
-Module
-
-Responsibility
-
-auth
-
-Authentication and identity
-
-users
-
-User profiles
-
-frameworks
-
-Competency frameworks
-
-competencies
-
-Competency definitions and states
-
-assessments
-
-Diagnostic assessments
-
-gaps
-
-Skill-gap calculations
-
-recommendations
-
-Learning recommendations
-
-catalogues
-
-Resource/catalogue management
-
-learning_paths
-
-Personalized learning paths
-
-documents
-
-File/document processing
-
-quizzes
-
-Quiz generation and assessment
-
-rag
-
-Retrieval and embeddings
-
-assistant
-
-AI assistant functionality
-
-evidence
-
-Competency evidence
-
-analytics
-
-Progress and analytics
-
-admin
-
-Administrative operations
-
-health
-
-Health checks
-
-legal
-
-Legal/privacy-related functionality
-
-⚡ Getting Started
-
-Prerequisites
+## Prerequisites
 
 Install:
 
-Node.js 18+
-
-npm
-
-Python 3.11+
-
-Git
+-   **Node.js 18+**
+-   **npm**
+-   **Python 3.11+**
+-   **Git**
 
 Optional:
 
-Docker
+-   Docker
+-   Docker Compose
 
-Docker Compose
+------------------------------------------------------------------------
 
-1. Clone the repository
+## 1. Clone the Repository
 
+``` bash
 git clone https://github.com/syedroshanriyan/stat-skill-SIH-2026.git
 cd stat-skill-SIH-2026
+```
 
-2. Install frontend dependencies
+------------------------------------------------------------------------
 
+## 2. Install Frontend Dependencies
+
+``` bash
 npm install
+```
 
-3. Create a Python environment
+------------------------------------------------------------------------
 
-Windows
+## 3. Create a Python Virtual Environment
 
+### Windows
+
+``` bash
 python -m venv .venv
 .venv\Scripts\activate
+```
 
-Linux / macOS
+### Linux / macOS
 
+``` bash
 python3 -m venv .venv
 source .venv/bin/activate
+```
 
-4. Install backend dependencies
+------------------------------------------------------------------------
 
+## 4. Install Backend Dependencies
+
+``` bash
 pip install -r apps/api/requirements.txt
+```
 
-5. Configure environment variables
+------------------------------------------------------------------------
 
-Create the required backend environment configuration.
+## 5. Configure Environment Variables
+
+Create the required environment configuration for the backend.
 
 Example:
 
+``` env
 DATABASE_URL=sqlite:///./statskill.db
 JWT_SECRET=replace-with-a-secure-secret
 CORS_ORIGINS=http://localhost:3000
 GEMINI_API_KEY=your-gemini-api-key
+```
 
-Never commit real API keys, database passwords, JWT secrets, or
-production credentials.
+> **Never commit real API keys, database credentials, JWT secrets, or
+> production environment values.**
 
-6. Start the platform
+------------------------------------------------------------------------
 
-Recommended
+## 6. Start the Platform
 
+### Recommended
+
+``` bash
 npm start
+```
 
-The repository’s startup script launches the web and API services for
+The repository's startup script launches the web and API services for
 local development.
 
-Frontend only
+### Frontend only
 
+``` bash
 npm run dev:web
+```
 
 Then open:
 
+``` text
 http://localhost:3000
+```
 
-🔌 Local API Endpoints
+------------------------------------------------------------------------
+
+# 🔌 Local API Access
 
 When running through the local proxy, the main application endpoints
 include:
 
-Endpoint
+  Endpoint      Purpose
+  ------------- -------------------------------
+  `/`           Landing page
+  `/login`      Authentication
+  `/register`   Registration
+  `/api/v1`     Versioned API
+  `/docs`       FastAPI Swagger documentation
+  `/redoc`      FastAPI ReDoc documentation
 
-Purpose
+------------------------------------------------------------------------
 
-/
-
-Landing page
-
-/login
-
-Authentication
-
-/register
-
-User registration
-
-/api/v1
-
-Versioned API
-
-/docs
-
-Swagger API documentation
-
-/redoc
-
-ReDoc API documentation
-
-🐳 Docker Setup
+# 🐳 Docker
 
 The repository includes Docker Compose configuration for a multi-service
 environment.
 
+``` mermaid
 flowchart LR
-    B[Browser] --> W[Next.js :3000]
-    W --> A[FastAPI :8000]
-    A --> D[(PostgreSQL + pgvector :5432)]
+    B["Browser"] --> W["Next.js :3000"]
+    W --> A["FastAPI :8000"]
+    A --> D[("PostgreSQL + pgvector")]
+```
 
-Start:
+Start the environment:
 
+``` bash
 docker compose up --build
+```
 
-Stop:
+Stop it:
 
+``` bash
 docker compose down
+```
 
-The Docker configuration provides:
+The Docker configuration is intended to support:
 
-PostgreSQL
+-   Next.js
+-   FastAPI
+-   PostgreSQL
+-   pgvector
+-   Persistent database storage
+-   Local upload storage
 
-pgvector
+------------------------------------------------------------------------
 
-FastAPI
+# 🧪 Testing & Build
 
-Next.js
+## Backend tests
 
-Persistent database volume
-
-Local upload storage
-
-☁️ Deployment
-
-Frontend
-
-The live frontend is deployed on Vercel.
-
-Live URL
-
-https://stat-skill-ai-psi.vercel.app
-
-The frontend is located in:
-
-apps/web
-
-For Vercel deployment, use:
-
-Root Directory: apps/web
-
-Typical environment configuration:
-
-BACKEND_URL=<your-render-backend-url>
-NEXT_PUBLIC_API_URL=/api/v1
-
-The public application uses the frontend API/proxy layer, so users do
-not need to interact directly with the backend deployment URL.
-
-Backend
-
-The backend is configured for Render using:
-
-render.yaml
-
-The deployment command is:
-
-uvicorn app.main:app --host 0.0.0.0 --port $PORT --app-dir apps/api
-
-The repository also contains:
-
-Procfile
-
-railway.json
-
-for alternative backend deployment.
-
-🧪 Testing
-
-Run backend tests:
-
+``` bash
 python -m pytest apps/api/tests -v
+```
 
-Build the frontend:
+## Frontend production build
 
+``` bash
 npm run build:web
+```
 
-Run frontend linting:
+## Frontend linting
 
+``` bash
 npm run lint:web
+```
 
-🔐 Security & Data Handling
+------------------------------------------------------------------------
 
-The project includes security-oriented mechanisms such as:
+# ☁️ Deployment
 
-JWT authentication
+## Live Application
 
-Password hashing
+The public application is deployed on Vercel:
 
-Configurable CORS
+### **https://stat-skill-ai-psi.vercel.app**
 
-Environment-based secrets
+[![Open Live
+Application](https://img.shields.io/badge/OPEN%20LIVE%20APPLICATION-143326?style=for-the-badge&logo=vercel&logoColor=white)](https://stat-skill-ai-psi.vercel.app)
 
-User-scoped data handling
+### Frontend deployment
 
-Request/audit-oriented infrastructure
+The frontend lives in:
 
-Separation of API, domain, and presentation layers
+``` text
+apps/web
+```
 
-Production note
+For Vercel:
 
-The presence of security/privacy modules does not by itself establish
-legal or regulatory compliance.
+``` text
+Root Directory: apps/web
+```
+
+The application uses the frontend API/proxy layer so the public README
+does not need to expose the backend service URL.
+
+### Backend deployment
+
+The repository is configured for a separate Render backend deployment
+through:
+
+``` text
+render.yaml
+```
+
+The backend deployment is intentionally kept behind the application's
+API/proxy configuration rather than presented as a public-facing project
+URL.
+
+Alternative backend deployment configuration is also included through:
+
+``` text
+Procfile
+railway.json
+```
+
+------------------------------------------------------------------------
+
+# 🔐 Security & Data Handling
+
+STAT-SKILL AI includes security-oriented architecture such as:
+
+-   JWT-based authentication
+-   Password hashing
+-   Configurable CORS
+-   Environment-based secret management
+-   User-scoped data access
+-   Server-side authorization
+-   Track / tenant isolation
+-   Audit-oriented infrastructure
+-   Separation between presentation, API, and domain logic
+-   Permission-aware document and retrieval workflows
+
+### Important
+
+Security features in the codebase should **not automatically be
+interpreted as a legal or regulatory compliance certification**.
 
 A production deployment should independently validate:
 
-Consent and lawful processing
+-   Consent and lawful processing
+-   Data retention
+-   Access control
+-   Encryption
+-   Audit requirements
+-   Data residency
+-   Incident response
+-   Applicable DPDP Act obligations
+-   Third-party AI provider data handling
 
-Data retention
+------------------------------------------------------------------------
 
-Access control
+# 🧭 Design Principles
 
-Encryption
-
-Audit requirements
-
-Data residency
-
-Incident response
-
-DPDP Act obligations
-
-Third-party AI provider data handling
-
-🧭 Design Principles
-
-1. Evidence before assumptions
+### 1. Evidence before assumptions
 
 Competency should be supported by assessment results and evidence rather
 than profile claims alone.
 
-2. Gap before recommendation
+### 2. Gap before recommendation
 
-The system should identify what is missing before deciding what the user
-should learn.
+The system should identify what is missing before deciding what the
+learner should study.
 
-3. Grounded AI
+### 3. Grounded AI
 
-AI-generated content should remain connected to source material wherever
-the workflow requires grounding.
+When source-grounded generation is required, AI output should remain
+connected to the relevant source material.
 
-4. Explainable recommendations
+### 4. Explainable recommendations
 
-A recommendation should have a reason tied to competency needs, role,
-track, or learning resources.
+A recommendation should have an identifiable relationship to competency
+needs, role, track, priority, or learning resources.
 
-5. Continuous improvement
+### 5. Continuous improvement
 
-Assessment results should feed back into competency state and future
+Assessment results feed back into competency state and future
 recommendations.
 
-6. Modular extensibility
-
-Government, Industry, and Academia should reuse the same intelligence
-engine while maintaining separate competency frameworks and resource
-mappings.
-
-🔁 End-to-End User Journey
+### 6. Modular extensibility
+
+Government, Industry, and Academia reuse the same intelligence engine
+while maintaining their own competency frameworks and resource mappings.
+
+------------------------------------------------------------------------
+
+# 🔁 Closed-Loop Competency Lifecycle
+
+``` mermaid
+stateDiagram-v2
+    [*] --> Profile
+    Profile --> Assessment
+    Assessment --> CompetencyState
+    CompetencyState --> GapAnalysis
+    GapAnalysis --> Recommendations
+    Recommendations --> Learning
+    Learning --> Evidence
+    Evidence --> Reassessment
+    Reassessment --> CompetencyState
+```
+
+### The core loop
+
+**Assess → Diagnose → Learn → Practice → Reassess → Update**
+
+This makes competency development a continuous process instead of a
+one-time quiz score.
+
+------------------------------------------------------------------------
+
+# 📊 Platform at a Glance
+
+``` text
+┌─────────────────────────────────────────────────────────────┐
+│                      STAT-SKILL AI                          │
+│        National Statistical Competency Intelligence         │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  GOVERNMENT        INDUSTRY          ACADEMIA               │
+│  Official Stats    Analytics         Curriculum             │
+│       │                │                 │                  │
+│       └────────────────┼─────────────────┘                  │
+│                        ▼                                    │
+│             SHARED COMPETENCY ENGINE                        │
+│                        │                                    │
+│       ┌────────────────┼────────────────┐                   │
+│       ▼                ▼                ▼                   │
+│   Assessment       Skill Gaps      Recommendations          │
+│       │                │                │                   │
+│       └────────────────┼────────────────┘                   │
+│                        ▼                                    │
+│                Learning Pathways                            │
+│                        │                                    │
+│                        ▼                                    │
+│              Practice / Evidence                            │
+│                        │                                    │
+│                        ▼                                    │
+│                   Reassessment                              │
+│                        │                                    │
+│                        └──────────────► Updated State       │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+------------------------------------------------------------------------
+
+# 📌 Project Status
+
+  Area                               Status
+  ---------------------------------- ----------------
+  Next.js frontend                   ✅ Implemented
+  FastAPI backend                    ✅ Implemented
+  Authentication                     ✅ Implemented
+  Government track                   ✅ Implemented
+  Industry track                     ✅ Implemented
+  Academia track                     ✅ Implemented
+  Diagnostic assessments             ✅ Implemented
+  Competency / skill-gap workflows   ✅ Implemented
+  Recommendations                    ✅ Implemented
+  Learning paths                     ✅ Implemented
+  Document processing                ✅ Implemented
+  AI-assisted quiz generation        ✅ Implemented
+  RAG / embedding architecture       ✅ Implemented
+  Analytics                          ✅ Implemented
+  Evidence workflows                 ✅ Implemented
+  Docker configuration               ✅ Included
+  Vercel deployment                  ✅ Live
+  Render backend configuration       ✅ Included
+
+------------------------------------------------------------------------
+
+# 🌐 Useful Links
+
+  ----------------------------------------------------------------------------------------------------------------------------------------------
+  Resource                            Link
+  ----------------------------------- ----------------------------------------------------------------------------------------------------------
+  🚀 **Live Application**             [stat-skill-ai-psi.vercel.app](https://stat-skill-ai-psi.vercel.app)
+
+  💻 **GitHub Repository**            [github.com/syedroshanriyan/stat-skill-SIH-2026](https://github.com/syedroshanriyan/stat-skill-SIH-2026)
+
+  🏛️ **Smart India Hackathon**        [sih.gov.in](https://www.sih.gov.in/)
+  ----------------------------------------------------------------------------------------------------------------------------------------------
 
-┌──────────────────────┐
-│       Register       │
-└──────────┬───────────┘
-           ↓
-┌──────────────────────┐
-│ Build Profile        │
-│ Education / Role     │
-│ Experience / Goal    │
-└──────────┬───────────┘
-           ↓
-┌──────────────────────┐
-│ Select Track         │
-│ Government           │
-│ Industry             │
-│ Academia             │
-└──────────┬───────────┘
-           ↓
-┌──────────────────────┐
-│ Diagnostic           │
-│ Assessment           │
-└──────────┬───────────┘
-           ↓
-┌──────────────────────┐
-│ Competency Profile   │
-└──────────┬───────────┘
-           ↓
-┌──────────────────────┐
-│ Skill-Gap Analysis   │
-└──────────┬───────────┘
-           ↓
-┌──────────────────────┐
-│ Recommendations      │
-└──────────┬───────────┘
-           ↓
-┌──────────────────────┐
-│ Personalized Path    │
-└──────────┬───────────┘
-           ↓
-┌──────────────────────┐
-│ Learn + Practice     │
-│ + AI-Generated Quiz  │
-└──────────┬───────────┘
-           ↓
-┌──────────────────────┐
-│ Reassessment         │
-└──────────┬───────────┘
-           ↓
-┌──────────────────────┐
-│ Updated Competency   │
-│ + Gap Reduction      │
-└──────────────────────┘
+------------------------------------------------------------------------
 
-🎯 SIH 2026 Requirement Mapping
+# 🤝 Contributing
 
-SIH-oriented requirement
+Contributions are welcome.
 
-STAT-SKILL AI implementation
+For substantial changes:
 
-Identify competency gaps
+1.  Fork the repository.
+2.  Create a feature branch.
+3.  Make focused changes.
+4.  Add or update tests where appropriate.
+5.  Verify the frontend build and backend tests.
+6.  Open a pull request with a clear description of the change.
 
-Competency + Skill-Gap Engine
+Example:
 
-Personalized training
+``` bash
+git checkout -b feature/your-feature
+git add .
+git commit -m "feat: add your feature"
+git push origin feature/your-feature
+```
 
-Recommendation + Learning Path Engine
+------------------------------------------------------------------------
 
-Government capacity building
+# 📄 License
 
-Government Track
+This project is developed for **Smart India Hackathon 2026** and
+institutional competency-development use.
 
-iGOT-oriented learning
+See the repository for the applicable licensing terms and project
+ownership information.
 
-Government catalogue/provider model
+------------------------------------------------------------------------
 
-NSSTA-oriented learning
+::: {align="center"}
+## STAT-SKILL AI
 
-Government catalogue/provider model
+**Measure competency. Identify the gap. Build the pathway. Verify the
+growth.**
 
-AI-enabled assessment
+`<br/>`{=html}
 
-Diagnostic Assessment Engine
+**[🚀 Launch STAT-SKILL AI](https://stat-skill-ai-psi.vercel.app)**
 
-Generate MCQs
+`<br/>`{=html}
 
-Document-to-Quiz Pipeline
-
-Uploaded learning material
-
-Document Intelligence + RAG
-
-Personalized learning
-
-Learning Path Engine
-
-Track competency development
-
-Competency History + Analytics
-
-Evidence-based progress
-
-Evidence module
-
-Extend beyond Government
-
-Industry + Academia tracks
-
-📈 Project Status
-
-Implemented
-
-Next.js frontend
-
-FastAPI backend
-
-Authentication architecture
-
-User profiles
-
-Competency frameworks
-
-Diagnostic assessments
-
-Skill-gap analysis
-
-Learning recommendations
-
-Learning-resource catalogues
-
-Learning-path architecture
-
-Document ingestion
-
-AI-assisted quiz generation
-
-RAG / embedding layer
-
-Competency history
-
-Evidence module
-
-Analytics module
-
-Government / Industry / Academia tracks
-
-Docker Compose setup
-
-Render deployment configuration
-
-Vercel frontend deployment configuration
-
-Future / production expansion
-
-Production-grade external catalogue synchronization
-
-Deeper government ecosystem integrations
-
-Larger-scale vector infrastructure
-
-Production observability and monitoring
-
-Formal security/privacy audit
-
-Expanded institutional analytics
-
-Expanded competency frameworks
-
-Additional evidence and credential integrations
-
-🔭 Extensibility
-
-The platform is intentionally designed around a shared competency
-engine.
-
-flowchart TB
-    C[Shared AI Competency Intelligence Engine]
-
-    C --> G[Government]
-    C --> I[Industry]
-    C --> A[Academia]
-
-    G --> GF[Official Statistics Frameworks]
-    G --> GR[iGOT / NSSTA Resources]
-
-    I --> IF[Industry Skill Frameworks]
-    I --> IR[Industry Learning Resources]
-
-    A --> AF[Academic Competency Frameworks]
-    A --> AR[Curriculum / Internship Resources]
-
-A new sector can reuse the same core infrastructure while adding:
-
-Competency frameworks
-
-Role definitions
-
-Required proficiency levels
-
-Assessment content
-
-Resource providers
-
-Recommendation mappings
-
-📚 Project Documentation & API
-
-For local development, FastAPI automatically exposes:
-
-Swagger: http://localhost:3000/docs
-ReDoc:   http://localhost:3000/redoc
-
-The versioned API is organized under:
-
-/api/v1
-
-This structure allows the backend to evolve without unnecessarily
-breaking existing clients.
-
-🤝 Contributing
-
-If extending the project:
-
-Create a feature branch.
-
-Keep business logic inside the appropriate domain module.
-
-Add or update backend tests.
-
-Validate frontend linting.
-
-Validate the production build.
-
-Test API behaviour.
-
-Submit a pull request with a clear description.
-
-Avoid placing domain logic directly inside UI components or oversized
-route handlers.
-
-🏆 Smart India Hackathon 2026
-
-STAT-SKILL AI is developed as a Smart India Hackathon 2026 solution
-focused on competency intelligence, personalized learning, and capacity
-building.
-
-The platform combines:
-
-Artificial Intelligence
-        +
-Competency Modeling
-        +
-Skill-Gap Analytics
-        +
-Document Intelligence
-        +
-RAG / Embeddings
-        +
-Personalized Learning
-        +
-Government Training Ecosystem
-
-into a unified platform.
-
-🔗 Links
-
-Resource
-
-Link
-
-🚀 Live Application
-
-https://stat-skill-ai-psi.vercel.app
-
-💻 GitHub Repository
-
-https://github.com/syedroshanriyan/stat-skill-SIH-2026
-
-STAT-SKILL AI
-
-<p align="center">
-<strong>From competency measurement to measurable capability
-development.</strong>
-</p>
-<p align="center">
-Built for <strong>Smart India Hackathon 2026</strong>
-</p>
+Built for a measurable, evidence-oriented approach to **statistical
+capacity building and workforce intelligence**.
+:::
