@@ -18,7 +18,7 @@ Demo](https://img.shields.io/badge/Live%20Demo-STAT--SKILL%20AI-143326?style=for
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Ready-336791?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
 
-**[Launch the Live Platform →](https://stat-skill-ai-psi.vercel.app)**
+### **[Launch the Live Platform →](https://stat-skill-ai-psi.vercel.app)**
 
 ------------------------------------------------------------------------
 
