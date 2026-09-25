@@ -186,7 +186,7 @@ flowchart TD
 
 ## Specialized Tracks
 
-### Government — Official Statistics
+### Government: Official Statistics
 
 The Government track is the primary SIH-oriented workflow.
 
@@ -214,7 +214,7 @@ flowchart LR
     I --> D
 ```
 
-### Industry — Analytics & Professional Development
+### Industry: Analytics & Professional Development
 
 The Industry track applies the same competency engine to professional analytics roles.
 
@@ -229,7 +229,7 @@ Example areas:
 - Applied analytical projects
 - Role-oriented skill development
 
-### Academia — Curriculum & Employability
+### Academia: Curriculum & Employability
 
 The Academia track connects academic learning with demonstrated competency.
 
@@ -286,15 +286,15 @@ flowchart TD
 
 | Stage | Purpose |
 |---|---|
-| **01 — Onboarding & Role Mapping** | Establishes sector, role, competency framework, and target requirements |
-| **02 — Diagnostic Baseline** | Establishes the starting competency state |
-| **03 — Competency Spectrum** | Maps results into defined proficiency tiers |
-| **04 — Skill-Gap Identification** | Compares current proficiency with target requirements |
-| **05 — Learning Roadmap** | Converts priority gaps into an ordered learning pathway |
-| **06 — Grounded Capacity Building** | Maps relevant resources, including configured iGOT / NSSTA pathways |
-| **07 — AI Grounded Quizzes** | Converts learning material into source-grounded assessment content |
-| **08 — Competency History** | Persists assessment events and historical competency changes |
-| **09 — Evidence & Oversight** | Supports competency evidence and authorized institutional views |
+| **01   Onboarding & Role Mapping** | Establishes sector, role, competency framework, and target requirements |
+| **02   Diagnostic Baseline** | Establishes the starting competency state |
+| **03   Competency Spectrum** | Maps results into defined proficiency tiers |
+| **04   Skill-Gap Identification** | Compares current proficiency with target requirements |
+| **05   Learning Roadmap** | Converts priority gaps into an ordered learning pathway |
+| **06   Grounded Capacity Building** | Maps relevant resources, including configured iGOT / NSSTA pathways |
+| **07   AI Grounded Quizzes** | Converts learning material into source-grounded assessment content |
+| **08   Competency History** | Persists assessment events and historical competency changes |
+| **09   Evidence & Oversight** | Supports competency evidence and authorized institutional views |
 
 ---
 
